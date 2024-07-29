@@ -9,7 +9,15 @@ var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
-builder.Services.AddControllers();
+builder.Services.AddLocalization(options => options.ResourcesPath = "Resources");
+
+builder.Services.AddControllers().AddViewLocalization().AddDataAnnotationsLocalization();
+app.UseRequestLocalization(Options =>
+{
+    var supportedCultures = new[] { "en-US", "zh-TW" };
+    Options.SetDefaultCulture(supportedCultures[0]).AddSuportedCultures(suportedClutures).AddSupportedUICultures(supportedCultures);
+});
+
 builder.Services.AddDbContext<ApplicationDbContext>(options => options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();

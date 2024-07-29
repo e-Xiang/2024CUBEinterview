@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("CubeInterviewAPI")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+55caa12bfb3c1ee6f0175b84aa68303afb725d6f")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+89675abb2592e49dc4be7f554a89c47f39a5afa2")]
 [assembly: System.Reflection.AssemblyProductAttribute("CubeInterviewAPI")]
 [assembly: System.Reflection.AssemblyTitleAttribute("CubeInterviewAPI")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
